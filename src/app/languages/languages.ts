@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguagesService } from '../services/languages-service/languages';
 
 @Component({
   selector: 'app-languages',
@@ -8,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class Languages {
 
+  constructor (public languagesService : LanguagesService) {
+    console.log(this.languagesService);
+  }
 }

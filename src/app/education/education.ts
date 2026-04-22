@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EducationService } from '../services/education-service/education';
 
 @Component({
   selector: 'app-education',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './education.css',
 })
 export class Education {
-
+  
+  constructor (public educationService : EducationService) {
+    console.log(this.educationService);
+  }
 }
