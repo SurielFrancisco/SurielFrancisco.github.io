@@ -11,6 +11,9 @@ import { Certificates } from './certificates/certificates';
 import { Languages } from './languages/languages';
 import { Interests } from './interests/interests';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     App,
@@ -24,11 +27,10 @@ import { Interests } from './interests/interests';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [
-    provideBrowserGlobalErrorListeners()
-  ],
+  providers: [],
   bootstrap: [App]
 })
 export class AppModule { }
