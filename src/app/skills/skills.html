@@ -1,4 +1,7 @@
-<p>skills works!</p>
-<p>
-    {{skillsService.accesoSkills}}
-</p>
+<ul *ngFor="let skill of skills">
+    <li>
+        <b>{{ skill.skill }}</b> <br>
+        {{ skill.percentage }} <br>
+    </li>
+
+</ul>
