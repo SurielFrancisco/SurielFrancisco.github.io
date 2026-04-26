@@ -1,6 +1,7 @@
 export class EducationModel {
     id?: string;
-    startDate?: string = 'mm/yyyy';
-    endDate?: string = 'mm/yyyy'
+    start?: string = 'mm-yyyy';
+    end?: string = 'mm-yyyy';
     nameSchool?: string = 'school name';
+    location?: string = 'City, Country';
 }

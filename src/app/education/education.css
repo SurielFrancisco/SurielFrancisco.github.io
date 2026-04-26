@@ -1,0 +1,53 @@
+/* src/app/work-experience/work-experience.css */
+/* src/app/education/education.css */
+
+h3 {
+    color: #1e3a8a;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #93c5fd;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Indicador visual tipo linea de tiempo */
+li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+}
+
+b, strong {
+    color: #0f172a;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+i {
+    color: #64748b;
+    font-style: normal;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+}

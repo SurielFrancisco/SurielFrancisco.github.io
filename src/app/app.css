@@ -1,0 +1,37 @@
+/* src/app/app.css */
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+table, th, td {
+    border: none;
+}
+
+td {
+    vertical-align: top;
+    padding: 2.5rem;
+}
+
+/* Columna izquierda: 60% del ancho */
+tr:not(:first-child) td:first-child {
+    width: 60%;
+    border-right: 1px solid #cbd5e1;
+}
+
+/* Columna derecha: 40% del ancho con fondo ligeramente distinto */
+tr:not(:first-child) td:last-child {
+    width: 40%;
+    background-color: #f8fafc;
+}
+
+/* Eliminar padding en la fila del header */
+tr:first-child td {
+    padding: 0;
+    border-right: none;
+}
