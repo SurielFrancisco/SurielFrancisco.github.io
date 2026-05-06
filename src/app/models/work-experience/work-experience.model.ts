@@ -6,4 +6,5 @@ export class WorkExperienceModel {
     position?: string = 'my position';
     company?: string = 'my company';
     acomplishments?: string = 'item 1, item 2, item n';
+    acomplishmentsArray?: string[] = [];
 }

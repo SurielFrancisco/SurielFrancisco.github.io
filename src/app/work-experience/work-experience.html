@@ -4,6 +4,8 @@
         {{ job.startDate }} - {{ job.endDate }} <i> {{ job.location }} </i> <br>
         <b> {{ job.position }} </b> <br>
         {{ job.company }} <br>
-        {{ job.acomplishments }} <br>
+        <div class="accomplishment-capsules">
+            <span class="blue-capsule" *ngFor="let acc of job.acomplishmentsArray">{{ acc }}</span>
+        </div>
     </li>
 </ul>

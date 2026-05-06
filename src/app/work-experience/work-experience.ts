@@ -24,7 +24,10 @@ export class WorkExperience {
         )
       )
     ).subscribe(data => {
-      this.workExperience = data;
+      this.workExperience = data.map((job: any) => ({
+        ...job,
+        acomplishmentsArray: Array.isArray(job.acomplishments) ? job.acomplishments : (job.acomplishments ? String(job.acomplishments).split(',').map((acc: string) => acc.trim()) : [])
+      }));
       this.cdr.detectChanges();
       console.log(this.workExperience);
     });
