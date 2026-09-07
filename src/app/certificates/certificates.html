@@ -1,7 +1,18 @@
 <h3>Certificates</h3>
 <ul>
   <li *ngFor="let cert of certificates">
-    <strong>{{ cert.name }}</strong> <br> 
+    <a
+      *ngIf="cert.link; else certificateName"
+      [href]="cert.link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <strong>{{ cert.name }}</strong>
+    </a>
+    <ng-template #certificateName>
+      <strong>{{ cert.name }}</strong>
+    </ng-template>
+    <br>
     {{ cert.provider }}
   </li> 
 </ul>

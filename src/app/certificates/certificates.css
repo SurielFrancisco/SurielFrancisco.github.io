@@ -36,3 +36,13 @@ b, strong {
     display: block;
     margin-bottom: 0.25rem;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover strong {
+    color: #2563eb;
+    text-decoration: underline;
+}
